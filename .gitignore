@@ -1,0 +1,4 @@
+migrations
+node_modules
+.DS_Store
+knexfile.js

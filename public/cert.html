@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Certs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="/dip.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="list.html">
+                <i class="fa fa-barcode big-logo"></i>
+                <b class="big-letters">D</b>iplomate
+                <b class="big-letters">U</b>pdater</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">List to Edit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">Add A Diplomate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">Add A Cert for a Diplomate</a>
+                    </li>
+                </ul>
+                <span class="navbar-text pull-right">
+                    <div class="contact-icons">
+                        <a href="https://github.com/krislewis" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kristofer-lewis-152b0130" target="_blank">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </div>
+
+                </span>
+
+        </nav>
+        <p></p>
+        <div class="container">
+            <div class="row">
+                <p id="lister"></p>
+
+            </div>
+        </div>
+        <div class="container">
+            <form class="EditCert">
+                <h1>Edit the Cert:</h1>
+                <div class="form-group">
+                    <div class="row">
+                        <input type="hidden" class="certID" name="id" value="test">
+                        <input type="hidden" class="DipID" name="id" value="test">
+                        <label>Diplomate: </label>
+                        <select>
+                            <option class="dipSelector" value="dipSelector"></option>
+                        </select>
+                        <input type="text" class="dipName form-control" placeholder="dipName">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Year: </label>
+
+                            <input type="text" class="certYear form-control" placeholder="year">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Cert ID:</label>
+                            <input type="text" class="certID form-control" placeholder="cert_id">
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="row">
+                        <input type="submit" value="Edit Certificate">
+                    </div>
+            </form>
+            <!-- put in cert years here-->
+            <div class="container">
+                
+                <div class="row">
+                    <p id="dip_edit">Back to Diplomate Edit</p>
+                </div>
+            </div>
+            </div>
+        </div>
+</body>
+
+</html>
